@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Europe Explore</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo">
+      <span class="logo-mark">E</span>
+      <div class="logo-copy">
+        <strong>Europe Explore</strong>
+        <span>Travel smarter across Europe</span>
+      </div>
+    </div>
+    <nav>
+      <a href="#destinations">Destinations</a>
+      <a href="#details">Places</a>
+      <a href="#booking">Book</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="account-actions">
+      <button id="themeToggle" class="btn btn-secondary">Dark Mode</button>
+      <span id="userStatus" class="user-status hidden"></span>
+      <a id="authLink" class="btn btn-tertiary" href="auth.html">Login / Sign Up</a>
+      <button id="logoutBtn" class="btn btn-tertiary hidden">Logout</button>
+    </div>
+  </header>
+
+  <section class="top-search">
+    <div class="top-search-inner">
+      <span class="search-icon">🔍</span>
+      <input id="topSearchInput" type="search" placeholder="Search cities: Paris, Rome, Budapest, Vienna" aria-label="Search cities" />
+    </div>
+  </section>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Travel & Discover</p>
+        <h1>Explore Europe&apos;s most beautiful cities, coasts, and castles.</h1>
+        <p>One page travel planning with destination discovery, hotel suggestions, flight details, and instant booking access.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#booking">Start Planning</a>
+          <a class="btn btn-secondary" href="#destinations">View Destinations</a>
+        </div>
+        <div class="hero-features">
+          <span class="feature-pill">50+ Cities</span>
+          <span class="feature-pill">Best hotel picks</span>
+          <span class="feature-pill">Fast booking</span>
+        </div>
+      </div>
+      <div class="hero-image">
+        <div class="hero-card">
+          <div class="hero-card-badge">Top Pick</div>
+          <h2>Rome, Italy</h2>
+          <p>Rich history, delicious food and timeless architecture.</p>
+          <div class="hero-card-meta">
+            <div>
+              <strong>3 days</strong>
+              <span>Recommended stay</span>
+            </div>
+            <div>
+              <strong>4.8/5</strong>
+              <span>User rating</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="popular-section">
+      <div class="section-header">
+        <h2>Popular Destinations</h2>
+        <p>Luxury escapes across Europe, curated for your next unforgettable journey.</p>
+      </div>
+      <div class="popular-grid">
+        <article class="popular-card">
+          <div class="card-image" style="background-image:url('https://images.unsplash.com/photo-1528291151371-67e448d4ee5d?auto=format&fit=crop&w=900&q=80');"></div>
+          <div class="card-body">
+            <span class="card-country">France</span>
+            <h3>Paris</h3>
+            <p>Glamorous riverfront escapes, Michelin dining, and iconic city romance.</p>
+            <div class="card-meta">
+              <span class="rating">★★★★☆ 4.9</span>
+              <span class="price">From €220 / night</span>
+            </div>
+          </div>
+        </article>
+        <article class="popular-card">
+          <div class="card-image" style="background-image:url('https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=900&q=80');"></div>
+          <div class="card-body">
+            <span class="card-country">Hungary</span>
+            <h3>Budapest</h3>
+            <p>Thermal spa retreats, baroque streets, and riverside evening views.</p>
+            <div class="card-meta">
+              <span class="rating">★★★★☆ 4.8</span>
+              <span class="price">From €180 / night</span>
+            </div>
+          </div>
+        </article>
+        <article class="popular-card">
+          <div class="card-image" style="background-image:url('https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=900&q=80');"></div>
+          <div class="card-body">
+            <span class="card-country">Austria</span>
+            <h3>Vienna</h3>
+            <p>Classical grandeur, sumptuous coffeehouses, and refined urban charm.</p>
+            <div class="card-meta">
+              <span class="rating">★★★★☆ 4.7</span>
+              <span class="price">From €210 / night</span>
+            </div>
+          </div>
+        </article>
+        <article class="popular-card">
+          <div class="card-image" style="background-image:url('https://images.unsplash.com/photo-1501959915551-4e8dffef4adc?auto=format&fit=crop&w=900&q=80');"></div>
+          <div class="card-body">
+            <span class="card-country">Spain</span>
+            <h3>Barcelona</h3>
+            <p>Modernist architecture, coastal nightlife, and chic Mediterranean style.</p>
+            <div class="card-meta">
+              <span class="rating">★★★★☆ 4.8</span>
+              <span class="price">From €195 / night</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="stats-section">
+      <div class="stats-grid">
+        <article class="stat-card">
+          <span class="stat-value" data-target="50">0</span>
+          <p>Countries</p>
+        </article>
+        <article class="stat-card">
+          <span class="stat-value" data-target="20000">0</span>
+          <p>Travelers</p>
+        </article>
+        <article class="stat-card">
+          <span class="stat-value" data-target="500">0</span>
+          <p>Hotels</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="gallery-section">
+      <div class="section-header">
+        <h2>Europe Gallery</h2>
+        <p>Stunning travel moments from iconic European destinations.</p>
+      </div>
+      <div class="gallery-grid">
+        <article class="gallery-item" style="background-image:url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=80');">
+          <div class="gallery-overlay"><span>Paris, France</span></div>
+        </article>
+        <article class="gallery-item" style="background-image:url('https://images.unsplash.com/photo-1526935432235-7a937a9d5d2f?auto=format&fit=crop&w=900&q=80');">
+          <div class="gallery-overlay"><span>Budapest, Hungary</span></div>
+        </article>
+        <article class="gallery-item" style="background-image:url('https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=900&q=80');">
+          <div class="gallery-overlay"><span>Vienna, Austria</span></div>
+        </article>
+        <article class="gallery-item" style="background-image:url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=900&q=80');">
+          <div class="gallery-overlay"><span>Barcelona, Spain</span></div>
+        </article>
+        <article class="gallery-item" style="background-image:url('https://images.unsplash.com/photo-1491553895911-0055eca6402d?auto=format&fit=crop&w=900&q=80');">
+          <div class="gallery-overlay"><span>Lake Como, Italy</span></div>
+        </article>
+        <article class="gallery-item" style="background-image:url('https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=900&q=80');">
+          <div class="gallery-overlay"><span>Amsterdam, Netherlands</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="search-panel">
+      <div>
+        <h2>Search destinations</h2>
+        <p>Type a city or country to filter places in Europe.</p>
+      </div>
+      <div class="search-bar">
+        <input id="searchInput" type="text" placeholder="Search for Amsterdam, Paris, Lisbon..." />
+      </div>
+    </section>
+
+    <section id="destinations" class="section-grid">
+      <div class="section-header">
+        <h2>Popular Destinations</h2>
+        <p>Click a place to view details, hotels, and flights.</p>
+      </div>
+      <div id="destinationCards" class="grid"></div>
+    </section>
+
+    <section id="details" class="details-section">
+      <div class="section-header">
+        <h2>Place Details</h2>
+      </div>
+      <div class="detail-layout">
+        <div class="detail-card" id="detailCard">
+          <h3>Select a destination to see details</h3>
+          <p>Choose one of the popular destinations above to view more information.</p>
+        </div>
+        <div class="info-panels">
+          <div class="info-box">
+            <h4>Hotel Suggestions</h4>
+            <ul id="hotelList"></ul>
+          </div>
+          <div class="info-box">
+            <h4>Flight Details</h4>
+            <ul id="flightList"></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="pricing-section">
+      <div class="section-header">
+        <h2>Travel Packages</h2>
+        <p>Choose the perfect plan for your European adventure.</p>
+      </div>
+      <div class="pricing-grid">
+        <article class="pricing-card">
+          <div class="pricing-header">
+            <span>Basic Package</span>
+            <strong>€299</strong>
+          </div>
+          <ul class="pricing-features">
+            <li>3 nights accommodation</li>
+            <li>City tour included</li>
+            <li>Budget flight options</li>
+            <li>24/7 travel support</li>
+          </ul>
+          <button class="btn btn-primary">Book Basic</button>
+        </article>
+        <article class="pricing-card featured">
+          <div class="pricing-header">
+            <span>Premium Package</span>
+            <strong>€499</strong>
+          </div>
+          <ul class="pricing-features">
+            <li>5 nights luxury stay</li>
+            <li>Breakfast & transfers</li>
+            <li>Guided city experiences</li>
+            <li>Priority booking</li>
+          </ul>
+          <button class="btn btn-primary">Book Premium</button>
+        </article>
+        <article class="pricing-card">
+          <div class="pricing-header">
+            <span>Luxury Package</span>
+            <strong>€799</strong>
+          </div>
+          <ul class="pricing-features">
+            <li>7 nights 5-star hotels</li>
+            <li>Exclusive dining & tours</li>
+            <li>Private transfers</li>
+            <li>VIP concierge</li>
+          </ul>
+          <button class="btn btn-primary">Book Luxury</button>
+        </article>
+      </div>
+    </section>
+
+    <section id="booking" class="booking-section">
+      <div class="section-header">
+        <h2>Book Your Trip</h2>
+        <p>Reserve flights, hotels, or a complete travel package.</p>
+      </div>
+      <div class="booking-grid">
+        <div class="booking-card">
+          <h3>Flight Booking</h3>
+          <label>From</label>
+          <input id="flightFrom" type="text" placeholder="Departure city" />
+          <label>To</label>
+          <input id="flightTo" type="text" placeholder="Destination" />
+          <label>Departure</label>
+          <input id="flightDate" type="date" />
+          <button id="flightBookBtn" class="btn btn-secondary">Book Flight</button>
+        </div>
+        <div class="booking-card">
+          <h3>Hotel Suggestion</h3>
+          <label>City</label>
+          <input id="hotelCity" type="text" placeholder="Enter city" />
+          <label>Check-in</label>
+          <input id="hotelCheckin" type="date" />
+          <label>Check-out</label>
+          <input id="hotelCheckout" type="date" />
+          <button id="hotelBookBtn" class="btn btn-secondary">Request Hotel</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact" class="site-footer">
+    <div>
+      <h3>Europe Explore</h3>
+      <p>Discover Europe, book smarter, and travel with confidence.</p>
+    </div>
+    <small>� 2026 Europe Explore. All rights reserved.</small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

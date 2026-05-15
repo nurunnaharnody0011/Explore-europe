@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Europe Explore — Login / Sign Up</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo">Europe Explore</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="index.html#destinations">Destinations</a>
+      <a href="index.html#booking">Book</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="btn btn-secondary" href="index.html">Back to Home</a>
+  </header>
+
+  <main class="auth-page">
+    <div class="auth-card">
+      <h1>Login or Sign Up</h1>
+      <p>Sign in to book flights and hotel stays with Europe Explore.</p>
+      <div class="auth-tabs">
+        <button id="loginTab" class="tab active" type="button">Login</button>
+        <button id="signupTab" class="tab" type="button">Sign Up</button>
+      </div>
+      <div id="loginForm" class="auth-form active">
+        <h3>Welcome back</h3>
+        <label for="loginEmail">Email</label>
+        <input id="loginEmail" type="email" placeholder="you@example.com" />
+        <label for="loginPassword">Password</label>
+        <input id="loginPassword" type="password" placeholder="Enter password" />
+        <button id="loginSubmit" class="btn btn-primary">Login</button>
+      </div>
+      <div id="signupForm" class="auth-form">
+        <h3>Create your account</h3>
+        <label for="signupName">Full name</label>
+        <input id="signupName" type="text" placeholder="Your name" />
+        <label for="signupEmail">Email</label>
+        <input id="signupEmail" type="email" placeholder="you@example.com" />
+        <label for="signupPassword">Password</label>
+        <input id="signupPassword" type="password" placeholder="Create password" />
+        <button id="signupSubmit" class="btn btn-primary">Sign Up</button>
+      </div>
+    </div>
+  </main>
+
+  <footer id="contact" class="site-footer">
+    <div>
+      <h3>Europe Explore</h3>
+      <p>Discover Europe, book smarter, and travel with confidence.</p>
+    </div>
+    <small>© 2026 Europe Explore. All rights reserved.</small>
+  </footer>
+
+  <script src="auth.js"></script>
+</body>
+</html>
